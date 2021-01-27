@@ -1,23 +1,31 @@
 <template>
   <div id="app">
+    <TopMenu></TopMenu>
     <img alt="Vue logo" src="./assets/logo.png" />
-    <h1>Welcome to the Dark Palace</h1>
+    <h2>Welcome to the Dark Palace</h2>
   </div>
 </template>
 
 <script>
+import TopMenu from "./components/top-menu/TopMenu";
+
 export default {
   name: "App",
+  components: {
+    TopMenu,
+  },
 };
 </script>
 
 <style lang="sass">
+body
+  background-color: #07001E
+  margin: 0
+
 #app
   font-family: Avenir, Helvetica, Arial, sans-serif
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-  text-align: center
-  color: #2c3e50
-  font-size: 1.25rem
-  margin-top: 60px
+  color: white
+  font-size: 5.25vw
 </style>
